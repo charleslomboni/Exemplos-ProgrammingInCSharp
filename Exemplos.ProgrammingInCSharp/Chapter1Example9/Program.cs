@@ -7,7 +7,6 @@ namespace Chapter1Example9 {
     internal class Program {
 
         private static void Main(string[] args) {
-
             Task<int> t = Task.Run(() => {
                 return 42;
             });

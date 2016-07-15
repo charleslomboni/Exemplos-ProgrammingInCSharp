@@ -7,7 +7,6 @@ namespace Chapter1Example11 {
     internal class Program {
 
         private static void Main(string[] args) {
-
             Task<int> t = Task.Run(() => {
                 return 42;
             });
@@ -26,7 +25,6 @@ namespace Chapter1Example11 {
 
             completedTask.Wait();
             Console.Read();
-
         }
     }
 }

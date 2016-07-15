@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Threading.Tasks;
 
 namespace Chapter1Example12 {
@@ -8,7 +7,6 @@ namespace Chapter1Example12 {
     internal class Program {
 
         private static void Main(string[] args) {
-
             Task<Int32[]> parent = Task.Run(() => {
                 var results = new Int32[3];
 
@@ -39,7 +37,6 @@ namespace Chapter1Example12 {
             // finalTask termina somente após parentTask
             finalTask.Wait();
             Console.Read();
-
         }
     }
 }
