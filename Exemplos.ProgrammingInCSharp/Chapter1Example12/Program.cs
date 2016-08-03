@@ -35,6 +35,7 @@ namespace Chapter1Example12 {
             );
 
             // finalTask termina somente após parentTask
+            // Aguarda apenas um única thread
             finalTask.Wait();
             Console.Read();
         }
